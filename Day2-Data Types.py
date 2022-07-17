@@ -1,4 +1,4 @@
-#Day 2 Final Project: Tip Calculator#########################################################################
+##########################Day 2 Final Project: Tip Calculator#########################################################################
 
 print("Welcome to the tip calculator! \n")
 bill = float(input("What was the total bill? $"))
