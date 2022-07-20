@@ -9,7 +9,7 @@ nr_letters= int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
-#Easy mode - order not randomized#
+# Easy mode - order not randomized#
 let = random.sample(letters, k=nr_letters)
 sym = random.sample(symbols, k=nr_symbols)
 num = random.sample(numbers, k=nr_numbers)
