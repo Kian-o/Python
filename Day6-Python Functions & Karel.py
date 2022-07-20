@@ -6,17 +6,13 @@ def turn_right():
 
 
 while not at_goal():
-    while not right_is_clear():
-        turn_left()
-    if right_is_clear():
-        turn_right()
+    if front_is_clear():
         move()
-    elif not wall_in_front():
+    elif right_is_clear():
+        turn_right()
         move()
     else:
-        turn_right()
-        move()
-
+        turn_left()
 ################################################NOTES############################################
 #Code Blocks#
 indentation matters
