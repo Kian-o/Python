@@ -4,13 +4,11 @@ import random
 import hangman_words
 import hangman_art
 
-word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(hangman_words.word_list)
 print(f'Pssst, the solution is {chosen_word}.')
 word_length = len(chosen_word)
 lives = 6
 end_of_game = False
-
 
 display = []
 for _ in range(word_length):
