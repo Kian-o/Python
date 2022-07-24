@@ -1,34 +1,28 @@
-import random
-import hangman_words
-import hangman_art
+import art
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+print(art.logo)
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
+if shift > 26:
+  shift = shift % 26
+def caesar(text_input, shift_amount, c_direction):
+  new_value =""
+  if c_direction == "decode":
+    shift_amount *= -1
+  for char in text_input:
+    if char in alphabet:
+      position = alphabet.index(char)
+      new_position = position + shift_amount
+      new_value += alphabet[new_position]
+    else:
+      new_value += char
+  print(f"The {c_direction}d text is {new_value}")
+  restart = input("Would you like to restart the cipher? Yes or No ").lower()
+  if restart == "yes":
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+    caesar(text_input = text, shift_amount = shift, c_direction = direction)
 
-word_list = ["aardvark", "baboon", "camel"]
-chosen_word = random.choice(hangman_words.word_list)
-print(f'Pssst, the solution is {chosen_word}.')
-word_length = len(chosen_word)
-lives = 6
-end_of_game = False
-
-
-display = []
-for _ in range(word_length):
-    display += "_"
-print(hangman_art.logo)
-while not end_of_game:
-  guess = input("Guess a letter: ").lower()
-
-  for position in range(word_length):
-    letter = chosen_word[position]
-    if letter == guess:
-        display[position] = letter
-  if guess not in chosen_word:
-    lives -= 1
-    print(f"The letter: {guess}, is not in the word.")
-    if lives == 0:
-      end_of_game = True
-      print("You Lose")
-  print(f"{' '.join(display)}")
-  print(hangman_art.stages[lives])
-  if "_" not in display:
-    end_of_game = True
-    print("You Win!!")
+caesar(text_input = text, shift_amount = shift, c_direction = direction)
