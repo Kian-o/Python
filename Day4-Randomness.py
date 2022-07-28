@@ -68,7 +68,7 @@ print(f"Your love score is {love_score}")
 # Modules help break up large complex code blocks. Modules are the .py files inside the larger project file.
 import different_module
 import day4_import
-print (day4_import.pi)
+print(day4_import.pi)
 
 # LISTS # 43
 # the list is a data structure: way of organizing/storing data in .py
