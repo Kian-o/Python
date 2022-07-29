@@ -2,7 +2,7 @@
 #Final thing#
 import random
 import hangman_words
-import hangman_art
+import art
 
 chosen_word = random.choice(hangman_words.word_list)
 print(f'Pssst, the solution is {chosen_word}.')
