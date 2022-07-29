@@ -12,7 +12,6 @@ bids = {}
 def find_highest_bidder(bidding_record):
     highest_bid = 0
     winner = ""
-
     for bidder in bidding_record:
         bid_amount = bidding_record[bidder]
         if bid_amount > highest_bid:
@@ -27,7 +26,6 @@ while not over:
     bids[name] = bid
     more = input("Are there any other bidders? Type 'yes' or 'no' ").lower()
     if more == 'yes':
-        over = False
         clear()
     else:
         over = True
