@@ -1,20 +1,41 @@
-travel_log = [
-{
-  "country": "France",
-  "visits": 12,
-  "cities": ["Paris", "Lille", "Dijon"]
-},
-{
-  "country": "Germany",
-  "visits": 5,
-  "cities": ["Berlin", "Hamburg", "Stuttgart"]
-},
-]
-def add_new_country(country_visited, times_visited, cities_visited):
-  new_country = {}
-  new_country["country"] = country_visited
-  new_country["visits"] = times_visited
-  new_country["cities"] = cities_visited
-  travel_log.append(new_country)
-add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
-print(travel_log)
+import art
+def add(n1, n2):
+  return n1 + n2
+
+def subtract(n1, n2):
+  return n1 - n2
+
+def multiply(n1, n2):
+  return n1 * n2
+
+def divide(n1, n2):
+  return n1 / n2
+
+operations = {
+  "+": add,
+  "-": subtract,
+  "*": multiply,
+  "/": divide
+}
+
+
+def calculator():
+    print(art.logo_calc)
+    num1 = float(input("What's the first number? "))
+    for key in operations:
+        print(key)
+    cont = True
+
+    while cont:
+        operation_symbol = input("Pick an operation: ")
+        num2 = float(input("What's the next number? "))
+        calculation_function = operations[operation_symbol]
+        answer = round(calculation_function(num1, num2), 2)
+        print(f"{num1} {operation_symbol} {num2} = {answer}")
+        if input(f"Type 'y' to continue calculating with {answer}, or type 'n' to exit: ").lower() == "y":
+            num1 = answer
+        else:
+            cont = False
+            calculator()
+
+calculator()

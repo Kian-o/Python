@@ -1,7 +1,91 @@
 ###########Calculator App#########################
+import art
+def add(n1, n2):
+  return n1 + n2
+
+def subtract(n1, n2):
+  return n1 - n2
+
+def multiply(n1, n2):
+  return n1 * n2
+
+def divide(n1, n2):
+  return n1 / n2
+
+operations = {
+  "+": add,
+  "-": subtract,
+  "*": multiply,
+  "/": divide
+}
 
 
+def calculator():
+    print(art.logo_calc)
+    num1 = float(input("What's the first number? "))
+    for key in operations:
+        print(key)
+    cont = True
 
+    while cont:
+        operation_symbol = input("Pick an operation: ")
+        num2 = float(input("What's the next number? "))
+        calculation_function = operations[operation_symbol]
+        answer = round(calculation_function(num1, num2), 2)
+        print(f"{num1} {operation_symbol} {num2} = {answer}")
+        if input(f"Type 'y' to continue calculating with {answer}, or type 'n' to exit: ").lower() == "y":
+            num1 = answer
+        else:
+            cont = False
+            calculator()
+
+calculator()
+
+####OR#######
+import art
+print(art.logo_calc)
+def add(n1, n2):
+  return n1 + n2
+
+def subtract(n1, n2):
+  return n1 - n2
+
+def multiply(n1, n2):
+  return n1 * n2
+
+def divide(n1, n2):
+  return n1 / n2
+
+operations = {
+  "+": add,
+  "-": subtract,
+  "*": multiply,
+  "/": divide
+}
+
+num1 = int(input("What's the first number? "))
+for key in operations:
+  print(key)
+
+operation_symbol = input("Pick an operation: ")
+num2 = int(input("What's the next number? "))
+calculation_function = operations[operation_symbol]
+answer = calculation_function(num1, num2)
+
+
+print(f"{num1} {operation_symbol} {num2} = {answer}")
+cont = True
+while cont:
+    another = input(f"Type 'y' to continue calculating with {answer}, or type 'n' to exit: ").lower()
+    if another == 'n':
+        count = False
+    else:
+      operation_symbol = input("Pick an operation: ")
+      num3 = int(input("What's the next number?: "))
+      calculation_function = operations[operation_symbol]
+      answer = calculation_function(answer, num3)
+
+print(f"{first_answer} {operation_symbol} {num3} = {answer}")
 
 
 
