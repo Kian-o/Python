@@ -27,8 +27,8 @@ def game():
   print(art.logo_higherlower)
   score = 0
   game_continue = True
-  account_a = get_random_selection
-  account_b = get_random_selection
+  account_a = get_random_selection()
+  account_b = get_random_selection()
 
   while game_continue:
 

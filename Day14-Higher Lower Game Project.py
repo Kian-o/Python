@@ -1,19 +1,18 @@
-# from day14_game_data import data
-import day14_game_data
-import art
+from day14_game_data import data
+from art import vs, logo_higherlower
 import random
 # from replit import clear
 
 
 def get_random_selection():
-  return random.choice(day14_game_data.data)
+  return random.choice(data)
 
 
 def data_format(account):
   name = account["name"]
   description = account["description"]
   country = account["country"]
-  print(f"{name}, {description}, {country}.")
+  return f"{name}, {description}, {country}."
 
 
 def check_answers(guess, a_followers, b_followers):
@@ -24,11 +23,11 @@ def check_answers(guess, a_followers, b_followers):
 
 
 def game():
-  print(art.logo_higherlower)
+  print(logo_higherlower)
   score = 0
   game_continue = True
-  account_a = get_random_selection
-  account_b = get_random_selection
+  account_a = get_random_selection()
+  account_b = get_random_selection()
 
   while game_continue:
 
@@ -36,15 +35,15 @@ def game():
       account_b = get_random_selection
 
     print(f"Compare a: {data_format(account_a)}")
-    print(art.vs)
+    print(vs)
     print(f"Against B: {data_format(account_b)}")
     guess = input("Who has more followers? Type 'A' or 'B': ").lower()
     a_follower_count = account_a["follower_count"]
     b_follower_count = account_b["follower_count"]
     is_correct = check_answers(guess, a_follower_count, b_follower_count)
 
-        # clear()
-    print(art.logo_higherlower)
+    # clear()
+    print(logo_higherlower)
 
     if is_correct:
       score += 1
