@@ -30,6 +30,8 @@ def game():
   account_b = get_random_selection()
 
   while game_continue:
+    account_a = account_b
+    account_b = get_random_selection()
 
     while account_a == account_b:
       account_b = get_random_selection
