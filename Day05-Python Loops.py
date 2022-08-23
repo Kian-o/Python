@@ -1,4 +1,5 @@
-#######################Day 5 Final Project: Password Generator################
+"""#######################"""Day 5 Final Project: Password Generator"""
+"""
 import random
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -9,7 +10,8 @@ nr_letters= int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
-# Easy mode - order not randomized#
+"""Easy mode - order not randomized"""
+
 let = random.sample(letters, k=nr_letters)
 sym = random.sample(symbols, k=nr_symbols)
 num = random.sample(numbers, k=nr_numbers)
@@ -18,7 +20,9 @@ easypw = ""
 for i in test:
   easypw += i
 print(f"Here is the easy password: {easypw}")
-#OR#
+
+"""OR"""
+
 password = ""
 for char in range(1, nr_letters +1):
   password += random.choice(letters)
@@ -28,7 +32,8 @@ for char in range(1, nr_numbers +1):
   password += random.choice(numbers)
 print(password)
 
-#Hard mode - order randomized#
+"""Hard mode - order randomized"""
+
 let = random.sample(letters, k=nr_letters)
 sym = random.sample(symbols, k=nr_symbols)
 num = random.sample(numbers, k=nr_numbers)
@@ -38,7 +43,9 @@ hardpw = ""
 for i in test2:
   hardpw += i
 print(f"Here is the hard password: {hardpw}")
-#OR#
+
+"""OR"""
+
 password = []
 for char in range(1, nr_letters +1):
   password.append(random.choice(letters))
@@ -52,11 +59,10 @@ for char in password:
   pw += char
 print(pw)
 
+"""NOTES"""
 
+"""Loops!! For Loop"""
 
-
-################################################NOTES###########################
-#Loops!! For Loop
 for item in list_of_items:
     Do something
 fruits = ["Apple", "Peach", "Pear"]
@@ -64,16 +70,14 @@ for fruit in fruits:
   print(fruit)
   print(fruit + " Pie")
 
-#Range!
+"""Range!"""
 for number in range(1, 100):
     print(number)
 
+"""CODE CHALLENGES"""
 
+"""Average Height"""
 
-
-
-##########################################CODE CHALLENGES########################
-#Average Height#
 student_heights = input("Input a list of student heights ").split()
 for n in range(0, len(student_heights)):
   student_heights[n] = int(student_heights[n])
@@ -93,7 +97,8 @@ average_height = round(total_height / students_total)
 print(f"average height = {average_height}")
 
 
-#High Scores#
+"""High Scores"""
+
 student_scores = input("Input a list of student scores ").split()
 for n in range(0, len(student_scores)):
   student_scores[n] = int(student_scores[n])
@@ -105,7 +110,8 @@ for score in student_scores:
     highest_score = score
 print(highest_score)
 
-#Adding Even Numbers#
+"""Adding Even Numbers"""
+
 total = 0
 for number in range(1, 101):
   if number % 2 == 0:
@@ -117,7 +123,8 @@ for number in range(2, 101, 2):
   total += number
 print(number)
 
-#FixxBuzz Job Interview#
+"""FixxBuzz Job Interview#"""
+
 for number in range (1, 101):
   if number % 3 == 0 and number % 5 == 0:
     print("Fizz Buzz")

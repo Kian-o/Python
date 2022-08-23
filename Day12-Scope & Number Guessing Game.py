@@ -1,6 +1,7 @@
-##### The Number Guessing Game ####
 import art
 import random
+
+"""The Number Guessing Game"""
 
 EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TURNS = 5
@@ -46,11 +47,11 @@ def game():
         elif guess != answer:
             print("Guess again.")
 
+
 game()
 
-## First Draft
+"""First Draft"""
 
-import random
 print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100")
 number = random.randrange(100)
@@ -61,7 +62,7 @@ difficulty = input("Choose a difficulty. Choose easy or hard: ").lower()
 def hard_mode():
     guess_attempts = 5
     game_over = False
-    while game_over == False:
+    while not game_over:
         print(f"You have {guess_attempts} attempts remaining to guess the number")
         user_guess = int(input("Make a guess: "))
         if user_guess == number:
@@ -76,11 +77,12 @@ def hard_mode():
         elif guess_attempts == 0:
             print("You've run out of guesses, you lose.")
             game_over = True
+
 
 def easy_mode():
     guess_attempts = 10
     game_over = False
-    while game_over == False:
+    while not game_over:
         print(f"You have {guess_attempts} attempts remaining to guess the number")
         user_guess = int(input("Make a guess: "))
         if user_guess == number:
@@ -96,59 +98,70 @@ def easy_mode():
             print("You've run out of guesses, you lose.")
             game_over = True
 
+
 if difficulty == "hard":
     hard_mode()
-elif difficulty== "easy":
+elif difficulty == "easy":
     easy_mode()
 
 
+"""Scope"""
 
+"""In python, Scope mostly applies to functions. There is no blockscope in py.
+Local Scope"""
 
-
-
-########### Scope #############
-# In python, Scope mostly applies to functions. There is no blockscope in py.
-#Local Scope
 def drink_potion():
     potion_strength = 2
     print(potion_strength)
-drink_potion()
-#Variable was created inside the function so it is only valid within the function
 
-#Global Scope
+
+drink_potion()
+
+"""Variable was created inside the function so it is only valid within the function"""
+
+"""Global Scope"""
+
 player_health = 10
+
+
 def drink_potion():
     potion_strength = 2
     print(player_health)
+
+
 drink_potion()
 
-#Modify Global Variables
+"""Modify Global Variables"""
+
 enemies = 1
+
 
 def increase_enemies():
     global enemies
     enemies += 2
     print(f"enemies inside function: {enemies}")
 
+
 increase_enemies()
 print(f"enemies outside function: {enemies}")
 
-#OR#
+"""OR"""
+
 enemies = 1
+
 
 def increase_enemies():
     print(f"enemies inside function: {enemies}")
     return enemies + 1
 
+
 enemies = increase_enemies()
 print(f"enemies outside function: {enemies}")
-#Namespace is anything that is given a name to. Namespaces are valid w/in specific scope
+"""Namespace is anything that is given a name to. Namespaces are valid w/in specific scope
+Global Constants: naming convention is all caps seperated w underscores."""
 
-#Global Constants: naming convention is all caps seperated w underscores.
 PI = 3.14159
+
 
 def calc():
     PI
-
-
-

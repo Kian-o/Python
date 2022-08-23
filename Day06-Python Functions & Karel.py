@@ -1,8 +1,12 @@
-#######################Day 6 Final Project: Escaping the Maze##################################
+"""Day 6 Final Project: Escaping the Maze"""
+
+
 def turn_right():
     turn_left()
     turn_left()
     turn_left()
+
+
 while front_is_clear():
     move()
 turn_left()
@@ -15,37 +19,50 @@ while not at_goal():
         move()
     else:
         turn_left()
-################################################NOTES############################################
-#Code Blocks#
-indentation matters
-the follwoing is a code block:
+
+"""NOTES"""
+
+"""Code Blocks"""
+
+"""indentation matters
+the follwoing is a code block:"""
+
+
 def my_function():
     print("Hello")
 
 
-#Functions#
+"""Functions
 See https://docs.python.org/3/library/functions.html#func-list for built in functions
-To create our own functions we use the prefix:
+To create our own functions we use the prefix:"""
+
+
 def my_function():
     print("Hello")
     print("Bye")
-my_function()
-The def prefix defines the function.
-Calling the function just specifiy the name of the function.
 
-#While Loops#
+
+my_function()
+
+"""The def prefix defines the function.
+Calling the function just specifiy the name of the function."""
+
+"""While Loops
 This keeps repeating a function WHILE a condition is true.
 while something_is_true
-    #do something repeatedly
+    #do something repeatedly"""
+
+"""CODE CHALLENGES"""
+
+"""The Hurdles Loop Challenge: Reeborg's World"""
 
 
-
-##########################################CODE CHALLENGES#########################################\
-#The Hurdles Loop Challenge: Reeborg's World#
 def turn_right():
     turn_left()
     turn_left()
     turn_left()
+
+
 def jump():
     turn_left()
     move()
@@ -54,20 +71,29 @@ def jump():
     turn_right()
     move()
     turn_left()
+
+
 def hurdle():
     move()
     jump()
+
+
 hurdle()
 hurdle()
 hurdle()
 hurdle()
 hurdle()
 hurdle()
-#OR#
+
+"""OR"""
+
+
 def turn_right():
     turn_left()
     turn_left()
     turn_left()
+
+
 def jump():
     turn_left()
     move()
@@ -76,22 +102,30 @@ def jump():
     turn_right()
     move()
     turn_left()
+
+
 def hurdle():
     move()
     jump()
+
+
 for step in range(6):
     hurdle()
 
-#Hurdles Challenge using While Loops#
+"""Hurdles Challenge using While Loops"""
+
 number_of_hurdles = 6
 while number_of_hurdles > 0:
     jump()
-    number_of_hurdles-= 1
-#
+    number_of_hurdles -= 1
+
+
 def turn_right():
     turn_left()
     turn_left()
     turn_left()
+
+
 def jump():
     move()
     turn_left()
@@ -101,10 +135,14 @@ def jump():
     turn_right()
     move()
     turn_left()
+
+
 while not at_goal():
     jump()
 
-#Hurdles dynamic path#
+"""Hurdles dynamic path"""
+
+
 def jump():
     turn_left()
     move()
@@ -113,13 +151,16 @@ def jump():
     turn_right()
     move()
     turn_left()
+
+
 while not at_goal():
     if wall_in_front():
         jump()
     else:
         move()
 
-#Final Hurdle! dynamic and variable height#
+"""Final Hurdle! dynamic and variable height"""
+
 while not at_goal():
     if not wall_on_right():
         turn_right()
@@ -130,5 +171,3 @@ while not at_goal():
         turn_left()
     elif front_is_clear():
         move()
-
-

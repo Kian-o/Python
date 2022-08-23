@@ -1,4 +1,5 @@
-########################Day 3 Final Project: Treasure Island############################################
+"""Day 3 Final Project: Treasure Island"""
+
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -42,20 +43,14 @@ else:
     print("Game Over.")
 
 
+"""NOTES"""
 
+"""Control FLow with if/else Conditional Operators"""
+"""if condition:"""
+"""     do_this"""
+""" else:"""
+"""     do_this"""
 
-
-
-
-
-
-################################################NOTES##############################################
-
-# Control FLow with if/else Conditional Operators#
-# if condition:
-#     do_this
-# else:
-#     do_this
 print("Welcome to the rollercoaster!")
 height = int(input("What is your height in cm? "))
 if height >= 120:
@@ -63,14 +58,15 @@ if height >= 120:
 else:
     print("Sorry, you have to grow taller before you can ride.")
 
-# Modulo: (%) returns the remainder of a division
+"""Modulo: (%) returns the remainder of a division"""
 
-#Nested if statements and elif statements#
-# if condition:
-#     if another condition:
-#        do_this
-# else:
-#     do_this
+"""Nested if statements and elif statements"""
+"""if condition:
+     if another condition:
+        do_this
+ else:
+     do_this"""
+
 print("Welcome to the rollercoaster!")
 height = int(input("What is your height in cm? "))
 if height >= 120:
@@ -85,13 +81,14 @@ if height >= 120:
 else:
     print("Sorry, you have to grow taller before you can ride.")
 
-#Multiple If statements in succession#
-# if condition1:
-#   do A
-#if condition2:
-#   do B
-# if condition3:
-#   do C
+"""Multiple If statements in succession#"""
+""" if condition1:
+   do A
+if condition2:
+   do B
+ if condition3:
+   do C"""
+
 print("Welcome to the rollercoaster!")
 height = int(input("What is your height in cm? "))
 bill = 0
@@ -113,12 +110,13 @@ if height >= 120:
     print(f"Please pay ${bill}.")
 else:
     print("Sorry, you have to grow taller before you can ride.")
-# adding to a variable you can use (+=) for subtracting you can use (-=)
 
-#Logical Operators#
-# How to combine conditions? AND, OR, & NOT
-# a = 12
-# a > 10 and a < 13
+"""adding to a variable you can use (+=) for subtracting you can use (-=)"""
+
+"""Logical Operators"""
+"""How to combine conditions? AND, OR, & NOT
+ a = 12
+ a > 10 and a < 13"""
 
 print("Welcome to the rollercoaster!")
 height = int(input("What is your height in cm? "))
@@ -146,10 +144,11 @@ else:
     print("Sorry, you have to grow taller before you can ride.")
 
 
-##########################################CODE CHALLENGES###########################################
+"""CODE CHALLENGES"""
 
 
-#Odd or Even?#
+"""Odd or Even?"""
+
 number = int(input("Which number do you want to check? "))
 modulo = number % 2
 if modulo >= 1:
@@ -163,7 +162,8 @@ if number % 2 == 0:
 else:
     print("This is an odd number.")
 
-#BMI 2.0#
+"""BMI 2.0"""
+
 height = float(input("enter your height in m: "))
 weight = float(input("enter your weight in kg: "))
 w = float(weight)
@@ -179,7 +179,9 @@ elif bmi > 30 and bmi <= 35:
   print(f"Your BMI is {bmi}. You are obese.")
 elif bmi > 35:
   print(f"Your BMI is {bmi}. You are clinically obese.")
-#OR#
+
+"""OR"""
+
 height = float(input("enter your height in m: "))
 weight = float(input("enter your weight in kg: "))
 w = float(weight)
@@ -196,7 +198,8 @@ elif bmi < 35:
 else:
     print(f"Your BMI is {bmi}. You are clinically obese.")
 
-#Leap Year#
+"""Leap Year"""
+
 year = int(input("Which year do you want to check? "))
 if year % 4 >= 1:
     print("This is not a leap year.")
@@ -206,18 +209,19 @@ elif year % 400 >= 1:
     print("This is not a leap year.")
 else:
     print("This is a leap year.")
-#OR#
+"""OR"""
+
 if year % 4 == 0:
     if year % 100 == 0:
-        if year % 400 == 0:
-        else:
+        if 400 != 0:
             print("Leap year.")
     else:
         print("Leap year.")
 else:
     print("Not leap year.")
 
-#Pizza Order Practice#
+"""Pizza Order Practice"""
+
 print("Welcome to Python Pizza Deliveries!")
 size = input("What size pizza do you want? S, M, or L ")
 add_pepperoni = input("Do you want pepperoni? Y or N ")
@@ -238,7 +242,9 @@ else:
 if extra_cheese == "Y":
     bill += 1
 print(f"Your final bill is: ${bill}")
-#OR#
+
+"""OR"""
+
 if size == "S":
     bill += 15
 elif size == "M":
@@ -254,7 +260,8 @@ if extra_cheese == "Y":
     bill += 1
 print(f"Your final bill is: ${bill}")
 
-#Love Calculator#
+"""Love Calculator"""
+
 print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
 name2 = input("What is their name? \n")

@@ -25,47 +25,50 @@ def caesar(text_input, shift_amount, c_direction):
     shift = int(input("Type the shift number:\n"))
     caesar(text_input = text, shift_amount = shift, c_direction = direction)
 
-caesar(text_input = text, shift_amount = shift, c_direction = direction)
+caesar(text_input = text, shift_amount = shift, c_direction = direction);
 
 
 
-################################################NOTES###########################
-#Caesar Cipher Part 1#
+"""NOTES"""
+
+"""Caesar Cipher Part 1
 Caesar Cipher encrpyts data by shifting a letter by a predetermined number
-Encrypt data by using encode [enter] "message" [enter] shift number [enter]
+Encrypt data by using encode [enter] "message" [enter] shift number [enter]"""
 
-"encode
-hellocoders
-9"
 
-Decrypt data is just as simple
-use decode [enter] "encrypted message" [enter] shift number [enter]
+"""Decrypt data is just as simple
+use decode [enter] "encrypted message" [enter] shift number [enter]"""
 
-# Functions with Inputs #
-def my_function(something)
-    #do this with something
-    #then do this
+"""Functions with Inputs"""
+
+def my_function(something):
+    """do this with something
+    then do this"""
+
 def greet_with_name(name):
     print(f"Hello {name}")
     print(f"How do you do {name}?")
-greet_with_name("Angela")
+greet_with_name("Angela");
 
-# Positional vs Keyword Arguments#
-# function with multiple inputs
+"""Positional vs Keyword Arguments
+function with multiple inputs"""
+
 def greet_with(name, location):
     print(f"Hello {name}")
     print(f"What is it like in {location}")
-greet_with("Angela", "UK") <--- Positional Argument
+greet_with("Angela", "UK"); """<--- Positional Argument"""
 
-#Keyword
+"""Keyword"""
+
 my_function(a=1, b=2, c=3)
 
 def greet_keyword(name="Angela", location ="location"):
     print(f"Hello {name}")
     print(f"What is it like in {location}")
-greet_keyword() <--- Keyword Argument
+greet_keyword(); """<--- Keyword Argument"""
 
-# Caesar Cipher Part 2: Encryption#
+"""Caesar Cipher Part 2: Encryption"""
+
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
@@ -79,17 +82,20 @@ def encrypt(plain_text, shift_number):
     new_letter = alphabet[shift_position]
     cipher_text += new_letter
   print(f"The encoded text is {cipher_text}")
-encrypt(plain_text=text, shift_number=shift)
+encrypt(plain_text=text, shift_number=shift);
 
-#Caesar Cipher Part 3: Decryption#
+"""Caesar Cipher Part 3: Decryption"""
+
 def decrypt(cipher_text, shift_amount):
   plain_text = ""
   for letter in cipher_text:
     position = alphabet.index(letter)
     new_position = position - shift_amount
     plain_text += alphabet[new_position]
-  print(f"The decrypted text is {plain_text}")
-#Combined#
+  print(f"The decrypted text is {plain_text}");
+
+"""Combined"""
+
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 
@@ -115,16 +121,18 @@ def decrypt(cipher_text, shift_amount):
   print(f"The decrypted text is {plain_text}")
 
 
-if direction == "encode"
+if direction == "encode":
   encrypt(plain_text=text, shift_amount=shift)
 else:
-  decrypt(cipher_text=text, shift_amount=shift)
+  decrypt(cipher_text=text, shift_amount=shift);
 
 
 
 
-##########################################CODE CHALLENGES#####################
-# Paint Area Calculator#
+"""CODE CHALLENGES"""
+
+"""Paint Area Calculator"""
+
 import math
 def paint_calc(height, width, cover):
     number_of_cans = math.ceil((height + width) / cover)
@@ -134,9 +142,10 @@ def paint_calc(height, width, cover):
 test_h = int(input("Height of wall: "))
 test_w = int(input("Width of wall: "))
 coverage = 5
-paint_calc(height=test_h, width=test_w, cover=coverage)
+paint_calc(height=test_h, width=test_w, cover=coverage);
 
-#Prime Number Checker#
+"""Prime Number Checker"""
+
 def prime_checker(number):
   prime = 0
   if number > 1:
@@ -149,9 +158,10 @@ def prime_checker(number):
     print(f"{number} is a prime number")
 
 n = int(input("Check this number: "))
-prime_checker(number=n)
+prime_checker(number=n);
 
-# further refinement
+"""further refinement"""
+
 import art
 import random
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -170,8 +180,10 @@ def caesar(text_input, shift_amount, c_direction):
       new_position = position - shift_amount
     new_value += alphabet[new_position]
   print(f"The {c_direction}d text is {new_value}")
-caesar(text_input = text, shift_amount = shift, c_direction = direction)
-#or#
+caesar(text_input = text, shift_amount = shift, c_direction = direction);
+
+"""or"""
+
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
@@ -188,4 +200,4 @@ def caesar(text_input, shift_amount, c_direction):
     new_value += alphabet[new_position]
   print(f"The {c_direction}d text is {new_value}")
 
-caesar(text_input = text, shift_amount = shift, c_direction = direction)
+caesar(text_input = text, shift_amount = shift, c_direction = direction);

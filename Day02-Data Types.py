@@ -1,4 +1,4 @@
-##########################Day 2 Final Project: Tip Calculator#########################################################################
+"""Day 2 Final Project: Tip Calculator"""
 
 print("Welcome to the tip calculator! \n")
 bill = float(input("What was the total bill? $"))
@@ -7,7 +7,8 @@ party = int(input("How many people will split the bill? "))
 individual = round(((bill*(tip/100) + bill)/party), 2)
 print(f"Each person should pay: ${individual}")
 
-###OR###
+"""OR"""
+
 print("Welcome to the tip calulator!")
 bill = float(input("What was the total bill? $ "))
 tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
@@ -18,43 +19,50 @@ print(f"Each person should pay: ${total_individual}")
 
 
 
-################################################NOTES#######################################################
+"""NOTES"""
+
 "Hello"[0]
-# counts the string characters
+"""counts the string characters"""
+
 type()
-# is data type checking
+"""is data type checking"""
+
 str()
-# converts data type into string
+"""converts data type into string"""
+
 float =()
-# converts data type into float
+"""converts data type into float"""
+
 print(round(2.77777777, 2))
-# rounds the output to two decimal places - 2.78
+"""rounds the output to two decimal places - 2.78"""
+
 print(8//3)
-# data type of result is int - 2
+"""data type of result is int - 2"""
 
 result = 4/2
 result /= 2
 print(result)
-# (+=) or (-=) or (/=) or (*=) is a way to manipulate a value based on previous value
+"""""""(+=) or (-=) or (/=) or (*=) is a way to manipulate a value based on previous value"""
 
 
 score = 0
 height = 1.8
 isWinning = True
-print(f"your score is {score}, your height is {heigh}, your are winning is {isWinning}")
-# f-Strings:  combines different data types in a single syntax
+print(f"your score is {score}, your height is {height}, your are winning is {isWinning}")
+"""f-Strings:  combines different data types in a single syntax"""
 
-##########################################CODE CHALLENGES###################################################
+"""CODE CHALLENGES"""
 
 
-#Data Types#
+"""Data Types"""
 two_digit_number = input("Type a two digit number: ")
 a = two_digit_number[0]
 b = two_digit_number[1]
 a1 = int(a)
 b1 = int(b)
 print(a1 + b1)
-#####OR#####
+
+"""OR"""
 two_digit_number = input("Type a two digit number: ")
 a = two_digit_number[0]
 b = two_digit_number[1]
@@ -62,7 +70,7 @@ result = int(a) + int(b)
 print(result)
 
 
-#BMI Calculator#
+"""BMI Calculator"""
 height = input("enter your height in m: ")
 weight = input("enter your weight in kg: ")
 w = float(weight)
@@ -70,14 +78,15 @@ h = float(height)
 bmi = w / (h**2)
 result = int(bmi)
 print(result)
-#####OR#####
+
+"""OR"""
 height = input("enter your height in m: ")
 weight = input("enter your weight in kg: ")
 bmi = int(weight) / float(height)**2
 bmi_as_int = int(bmi)
 print(bmi_as_int)
 
-#Life in Weeks#
+"""Life in Weeks"""
 age = input("What is your current age?")
 time_left = 90-int(age)
 months_left = time_left * 12
