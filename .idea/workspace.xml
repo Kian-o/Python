@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f3af5bd-e685-4b5b-9968-788f0cb19a55" name="Changes" comment="Resolved external library issue with default interpreter">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_4_2022_3_46_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_4_2022_3_46_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_7_2022_9_35_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_7_2022_9_35_AM__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/coffee_maker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/money_machine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day01-Introduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day01-Introduction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day02-Data Types.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day02-Data Types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day03-IF and ELIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day03-IF and ELIF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day04-Randomness.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day04-Randomness.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day05-Python Loops.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day05-Python Loops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day06-Python Functions &amp; Karel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day06-Python Functions &amp; Karel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day07-Beginner - Hangman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day07-Beginner - Hangman.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day08-Encryption &amp; Decryption - Caesar Cipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day08-Encryption &amp; Decryption - Caesar Cipher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day09-Beginner-Dictionaries, Nesting, &amp; the Secret Auction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day09-Beginner-Dictionaries, Nesting, &amp; the Secret Auction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day10-Functions with Outputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day10-Functions with Outputs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day11-Capstone Blackjack.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day11-Capstone Blackjack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day12-Scope &amp; Number Guessing Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day12-Scope &amp; Number Guessing Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day13- Debugging.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day13- Debugging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day14-Higher Lower Game Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day14-Higher Lower Game Project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day15-Coffee Machine Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day15-Coffee Machine Project.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day16-Object Oriented Programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day16-Object Oriented Programming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,19 +33,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/oreil/AppData/Local/Programs/Python/Python310/Lib/site-packages&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.24922441&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/oreil/OneDrive/Documents/GitHub/100-Days-of-Code",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.splitter.proportion": "0.24922441"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\oreil\PycharmProjects\100-Days-of-Code" />
       <recent name="C:\Users\oreil\OneDrive\Documents\GitHub\100-Days-of-Code" />
+      <recent name="C:\Users\oreil\PycharmProjects\100-Days-of-Code" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\oreil\AppData\Local\Programs\Python\Python310\Lib\site-packages" />
@@ -105,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660014673162</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Resolved external library issue with default interpreter">
+      <created>1661218544104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661218544104</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
