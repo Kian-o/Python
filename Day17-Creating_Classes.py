@@ -41,12 +41,62 @@ class QuizBrain:
             self.score += 1
         else:
             print("That's wrong.")
-            self.score -= 1
         print(f"The correct answer was : {correct_answer}")
         print(f"Your current score is: {self.score}/{self.question_number}")
+        print("\n")
 
 
 quiz = QuizBrain(question_bank)
 
 while quiz.quiz_on():
     quiz.next_question()
+
+print("You've completed the quiz")
+print(f"Your final score was: {quiz.score}/{quiz.question_number}")
+
+"""Notes"""
+
+
+class User:
+
+    def __init__(self, user_id, username):
+        self.id = user_id
+        self.username = username
+        self.followers = 0
+        self.following = 0
+
+    def follow(self, user):
+        user.followers += 1
+        self.following += 1
+
+
+user_1 = User("001", "michael")
+User_2 = User("001", "angela")
+
+# user_1 = User()
+# user_1.id = "001"
+# user_1.username = "michael"
+#
+# print(user_1.username)
+
+"""Constructor: part of the blueprint that allows us to specify what should happen when object is constructed.
+Also known as initializing an object: to set variables, counters etc. to their starting values at the beginning
+of a program or subprogram."""
+
+"""init function:"""
+
+
+class Car:
+    def __init__(self, seats):
+        self.seats = seats
+        # initialise attributes
+
+    def enter_race_mode(self):
+        self.seats = 2
+
+
+"""PascalCase: The first letter of each word is capitalized"""
+"""camelCase: The first word is lower cased and each subsequent word is capitalized """
+"""snake_case: all words are lower case and separated by underscore"""
+
+"""Methods are the thing that the object does. See enter_race_mode in Car class"""
