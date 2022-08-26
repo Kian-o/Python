@@ -1,24 +1,30 @@
-from turtle import Turtle, Screen
+import turtle as t
 import random
 
 """Python Turtle"""
-tommy = Turtle()
-tommy.shape("turtle")
-colors = ["blue", "tomato", "indigo", "olive drab", "green", "light sky blue"]
+spiro = t.Turtle()
+t.colormode(255)
+spiro.shape("turtle")
+spiro.speed('fastest')
 
 
-def draw_shape(num_sides):
-    angle = 360 / num_sides
-    tommy.pencolor(random.choice(colors))
-    for _ in range(num_sides):
-        tommy.forward(100)
-        tommy.right(angle)
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return r, g, b
 
 
-for shape_side_n in range(3, 11):
-    draw_shape(shape_side_n)
+this_list_this_list = [0, 90, 100, 270]
 
-print(tommy)
 
-screen = Screen()
+def draw_spirograph(size_of_gap):
+    for _ in range(int(360 / size_of_gap)):
+        spiro.pencolor(random_color())
+        spiro.setheading(spiro.heading() + size_of_gap)
+        spiro.circle(100)
+
+
+draw_spirograph(5)
+screen = t.Screen()
 screen.exitonclick()
