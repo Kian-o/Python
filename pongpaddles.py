@@ -5,26 +5,49 @@ UP = 90
 DOWN = 270
 
 
-class Paddle:
+class Paddle(Turtle):
 
     def __init__(self, position):
-        self.segments = []
-        self.position = position
-        self.create_paddle(self.position)
-        self.head = self.segments[0]
-
-    def create_paddle(self, position):
-        paddle = Turtle("square")
-        paddle.ht()
-        paddle.penup()
-        paddle.color("white")
-        paddle.shapesize(stretch_wid=5, stretch_len=1)
-        paddle.goto(position)
-        paddle.st()
-        self.segments.append(paddle)
+        super().__init__()
+        self.shape("square")
+        self.ht()
+        self.penup()
+        self.color("white")
+        self.shapesize(stretch_wid=5, stretch_len=1)
+        self.goto(position)
+        self.st()
 
     def down(self):
-        self.head.goto(self.head.xcor(), (self.head.ycor() - MOVE_DISTANCE))
+        self.goto(self.xcor(), (self.ycor() - MOVE_DISTANCE))
 
     def up(self):
-        self.head.goto(self.head.xcor(), (self.head.ycor() + MOVE_DISTANCE))
+        self.goto(self.xcor(), (self.ycor() + MOVE_DISTANCE))
+
+
+class Ball():
+
+    def __init__(self):
+        super().__init__()
+        self.shape("circle")
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # def create_paddle(self, position):
+    #     paddle = Turtle("square")
+    #     self.ht()
+    #     self.penup()
+    #     self.color("white")
+    #     self.shapesize(stretch_wid=5, stretch_len=1)
+    #     self.goto(position)
+    #     self.st()
+    #     self.segments.append(paddle)
