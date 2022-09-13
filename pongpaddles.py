@@ -24,11 +24,27 @@ class Paddle(Turtle):
         self.goto(self.xcor(), (self.ycor() + MOVE_DISTANCE))
 
 
-class Ball():
-
+class Ball(Turtle):
     def __init__(self):
         super().__init__()
         self.shape("circle")
+        self.penup()
+        self.color("white")
+        self.x_move = 10
+        self.y_move = 10
+
+    def move(self):
+        self.goto(self.xcor() + self.x_move, self.ycor() + self.y_move)
+
+    def bounce_y(self):
+        self.y_move *= -1
+
+    def bounce_x(self):
+        self.x_move *= -1
+
+    def ball_reset(self):
+        self.home()
+        self.bounce_x()
 
 
 
@@ -42,12 +58,3 @@ class Ball():
 
 
 
-    # def create_paddle(self, position):
-    #     paddle = Turtle("square")
-    #     self.ht()
-    #     self.penup()
-    #     self.color("white")
-    #     self.shapesize(stretch_wid=5, stretch_len=1)
-    #     self.goto(position)
-    #     self.st()
-    #     self.segments.append(paddle)
