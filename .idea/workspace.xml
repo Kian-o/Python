@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f3af5bd-e685-4b5b-9968-788f0cb19a55" name="Changes" comment="made a quiz game">
-      <change afterPath="$PROJECT_DIR$/image.jpg" afterDir="false" />
+    <list default="true" id="1f3af5bd-e685-4b5b-9968-788f0cb19a55" name="Changes" comment="Inheritance and List Slicing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day18-Importing Modules.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day18-Importing Modules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day20-Animation &amp; Coordinates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day20-Animation &amp; Coordinates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day23-Turtle Crossing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day23-First Capstone.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turtle_crossing.py" beforeDir="false" afterPath="$PROJECT_DIR$/turtle_crossing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,15 +32,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/oreil/OneDrive/Documents/GitHub/100-Days-of-Code",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "settings.editor.splitter.proportion": "0.24922441"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oreil/OneDrive/Documents/GitHub/100-Days-of-Code&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.24922441&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\oreil\OneDrive\Documents\GitHub\100-Days-of-Code" />
@@ -110,7 +112,42 @@
       <option name="project" value="LOCAL" />
       <updated>1661398847272</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="turtle_hirst">
+      <created>1661826077483</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661826077483</updated>
+    </task>
+    <task id="LOCAL-00006" summary="off to the races!!">
+      <created>1661993988748</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661993988748</updated>
+    </task>
+    <task id="LOCAL-00007" summary="off to the races!!">
+      <created>1661994075840</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661994075840</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Inheritence and List Slicing">
+      <created>1662240978884</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662240978884</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Inheritance and List Slicing">
+      <created>1662241079919</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662241079919</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +164,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Resolved external library issue with default interpreter" />
     <MESSAGE value="made a quiz game" />
-    <option name="LAST_COMMIT_MESSAGE" value="made a quiz game" />
+    <MESSAGE value="turtle_hirst" />
+    <MESSAGE value="off to the races!!" />
+    <MESSAGE value="Inheritence and List Slicing" />
+    <MESSAGE value="Inheritance and List Slicing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inheritance and List Slicing" />
   </component>
 </project>
