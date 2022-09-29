@@ -83,3 +83,4 @@ class Player(Turtle):
 
     def go_to_start(self):
         self.goto(STARTING_POSITION)
+
