@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f3af5bd-e685-4b5b-9968-788f0cb19a55" name="Changes" comment="First Capstone finished">
-      <change afterPath="$PROJECT_DIR$/Day24-Local Files and Directories.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snake_scoreboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day20-Animation &amp; Coordinates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day20-Animation &amp; Coordinates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day21-Inheritance and List Slicing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day21-Inheritance and List Slicing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake.py" afterDir="false" />
-    </list>
+    <list default="true" id="1f3af5bd-e685-4b5b-9968-788f0cb19a55" name="Changes" comment="local files and opening/reading/writing files in py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664476827060</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="local files and opening/reading/writing files in py">
+      <created>1664729078013</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664729078013</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +190,7 @@
     <MESSAGE value="Inheritence and List Slicing" />
     <MESSAGE value="Inheritance and List Slicing" />
     <MESSAGE value="First Capstone finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Capstone finished" />
+    <MESSAGE value="local files and opening/reading/writing files in py" />
+    <option name="LAST_COMMIT_MESSAGE" value="local files and opening/reading/writing files in py" />
   </component>
 </project>
