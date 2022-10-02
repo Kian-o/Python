@@ -35,49 +35,25 @@ while game_is_on:
 
     # Detect collision with wall
     if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
-        game_is_on = False
-        scoreboard.game_over()
+        scoreboard.reset()
+        snake.reset()
 
     # Detect collision with tail
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:
-            game_is_on = False
-            scoreboard.game_over()
-
+            scoreboard.reset()
+            snake.reset()
 
 screen.exitonclick()
 
 
-"""Classes can inherit methods from other classes"""
-"""Below the Fish class inherits attributes from the Animal class"""
-"""super() refers to the initial class (Animal)"""
+# Files
+file = open("my_file.txt")
+contents = file.read()
+file.close()
 
+with open("my_file.txt") as file:
+    content = file.read()
 
-class Animal:
-    def __init__(self):
-        self.num_eyes = 2
-
-    def breathe(self):
-        print("Inhale, exhale.")
-
-
-class Fish(Animal):
-    def __init__(self):
-        super().__init__()
-
-    def swim(self):
-        print("moving in water")
-
-    def breathe(self):
-        super().breathe()
-        print("doing this in water")
-
-
-nemo = Fish()
-nemo.swim()
-nemo.breathe()
-
-"""Slicing Lists"""
-piano_keys = ["a", "b", "c", "d", "e", "f", "g"]
-
-print(piano_keys[2:5])
+with open("my_file.txt", mode="w") as file:
+    file.write("New text.")

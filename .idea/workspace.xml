@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f3af5bd-e685-4b5b-9968-788f0cb19a55" name="Changes" comment="Inheritance and List Slicing">
+    <list default="true" id="1f3af5bd-e685-4b5b-9968-788f0cb19a55" name="Changes" comment="First Capstone finished">
+      <change afterPath="$PROJECT_DIR$/Day24-Local Files and Directories.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake_scoreboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day18-Importing Modules.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day18-Importing Modules.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day20-Animation &amp; Coordinates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day20-Animation &amp; Coordinates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day23-Turtle Crossing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day23-First Capstone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day21-Inheritance and List Slicing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day21-Inheritance and List Slicing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turtle_crossing.py" beforeDir="false" afterPath="$PROJECT_DIR$/turtle_crossing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +150,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662241079919</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="First Capstone finished">
+      <created>1664243063862</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664243063862</updated>
+    </task>
+    <task id="LOCAL-00011" summary="First Capstone finished">
+      <created>1664476811600</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664476811600</updated>
+    </task>
+    <task id="LOCAL-00012" summary="First Capstone finished">
+      <created>1664476827060</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664476827060</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +192,7 @@
     <MESSAGE value="off to the races!!" />
     <MESSAGE value="Inheritence and List Slicing" />
     <MESSAGE value="Inheritance and List Slicing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inheritance and List Slicing" />
+    <MESSAGE value="First Capstone finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Capstone finished" />
   </component>
 </project>
