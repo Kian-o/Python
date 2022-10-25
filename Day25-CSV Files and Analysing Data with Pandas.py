@@ -37,6 +37,7 @@ turtle.mainloop()
 
 turtle.shape(image)
 
+#
 data = pandas.read_csv('squirrel_count.csv')
 
 fur_color_list = data['Primary Fur Color'] = data['Primary Fur Color'].to_list()
