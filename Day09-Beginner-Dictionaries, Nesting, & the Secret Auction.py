@@ -112,9 +112,9 @@ for student in student_scores:
     score = student_scores[student]
     if score > 90:
         student_grades[student] = "Outstanding"
-    if score > 80 and score <= 89:
+    if 80 < score <= 89:
         student_grades[student] = "Exceeds Expectations"
-    if score > 70 and score <= 79:
+    if 70 < score <= 79:
         student_grades[student] = "Acceptable"
     if score <= 70:
         student_grades[student] = "Fail"
