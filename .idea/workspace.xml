@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f3af5bd-e685-4b5b-9968-788f0cb19a55" name="Changes" comment="local files and opening/reading/writing files in py">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day09-Beginner-Dictionaries, Nesting, &amp; the Secret Auction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day09-Beginner-Dictionaries, Nesting, &amp; the Secret Auction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day25-CSV Files and Analysing Data with Pandas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day25-CSV Files and Analysing Data with Pandas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="1f3af5bd-e685-4b5b-9968-788f0cb19a55" name="Changes" comment="Pandas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664729391851</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Pandas">
+      <created>1666666565147</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666666565147</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Pandas">
+      <created>1666666638478</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666666638478</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +212,7 @@
     <MESSAGE value="Inheritance and List Slicing" />
     <MESSAGE value="First Capstone finished" />
     <MESSAGE value="local files and opening/reading/writing files in py" />
-    <option name="LAST_COMMIT_MESSAGE" value="local files and opening/reading/writing files in py" />
+    <MESSAGE value="Pandas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pandas" />
   </component>
 </project>
